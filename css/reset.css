@@ -179,3 +179,7 @@ p {
 	line-height: normal;
 	color: var(--text-white, #E3EDEE);
 }
+::selection {
+    background: #A10B24; 
+    color:#0C0A09 
+   }
