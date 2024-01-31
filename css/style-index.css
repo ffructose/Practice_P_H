@@ -1,0 +1,51 @@
+body {
+    background: #0C0A09;
+}
+
+
+.main-1 {
+    padding-top: 44px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-1_gif {
+    width: 614.471px;
+    height: 552px;
+    grid-area: 1/1/2/2;
+}
+
+.main-1_text {
+    padding-left: 15px;
+    grid-area: 1/2/2/3;
+    display: grid;
+}
+
+.main-1_text>h2 {
+    color: #E3EDEE;
+    font-family: Impact;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+    grid-area: 1/1/2/2;
+}
+
+.main-1_p>p {
+    color: #FFF;
+
+    font-family: "Nunito Sans";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+   
+    
+}
+
+.main-1_p{
+    grid-area: 2/1/3/2;
+    width: 435px;
+}
