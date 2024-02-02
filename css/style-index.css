@@ -113,7 +113,7 @@
 @media (min-width: 769px) {
     body {
         background: #0C0A09;
-        width: 100vw;
+        width: 100%;
 
     }
 
@@ -380,12 +380,122 @@
     .espers>.cards {
         width: 1065px;
         justify-self: center;
+        display: grid;
     }
 
     .card {
         width: 255px;
         height: 255px;
         perspective: 1000px;
+        margin: 8px 8px 8px 8px;
+    }
+
+    .card1{
+        grid-area: 1/1/2/2;
+    }
+    .card1>.card-inner>.card-front{
+        background-image: url(../img/Clara-Hera.png) ;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .card1>.card-inner>.card-back{
+        background:  #9385FF;
+    }
+
+    .card2{
+        grid-area: 1/2/2/3;
+    }
+    .card2>.card-inner>.card-front{
+        background-image: url(../img/Elliot-Thoth.png) ;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .card2>.card-inner>.card-back{
+        background:  #A08265;
+    }
+
+    .card3{
+        grid-area: 1/3/2/4;
+    }
+    .card3>.card-inner>.card-front{
+        background-image: url(../img/Gaius-Zeus.png) ;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .card3>.card-inner>.card-back{
+        background:  #2D3241;
+    }
+
+    .card4{
+        grid-area: 1/4/2/5;
+    }
+    .card4>.card-inner>.card-front{
+        background-image: url(../img/JiangJiuli-Chiyou.png) ;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .card4>.card-inner>.card-back{
+        background:  #A10B24;
+    }
+
+    .card5{
+        grid-area: 2/1/3/2;
+    }
+    .card5>.card-inner>.card-front{
+        background-image: url(../img/Leon-Vali.png) ;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .card5>.card-inner>.card-back{
+        background:  #A10B24;
+    }
+
+    .card6{
+        grid-area: 2/2/3/3;
+    }
+    .card6>.card-inner>.card-front{
+        background-image: url(../img/Yuuhime-Izanami.png) ;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .card6>.card-inner>.card-back{
+        background:  #A10B24;
+    }
+
+    .card7{
+        grid-area: 2/3/3/4;
+    }
+    .card7>.card-inner>.card-front{
+        background-image: url(../img/LuoYan-YanluoWang.png) ;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .card7>.card-inner>.card-back{
+        background:  #A10B24;
+    }
+
+    .card8{
+        grid-area: 2/4/3/5;
+    }
+    .card8>.card-inner>.card-front{
+        background-image: url(../img/Sally-Sif.png) ;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .card8>.card-inner>.card-back{
+        background:  #FCE389;
+    }
+    .card8>.card-inner>.card-back>p,
+    .card8>.card-inner>.card-back>.card-a>p{
+        color: #0C0A09;
     }
 
     .card-inner {
@@ -447,6 +557,9 @@
         grid-area: 2/1/3/2;
         display: grid;
         align-items: center;
+        transition: all 0.9s ease-in-out;
+
+        justify-content: center;
     }
 
     .card-a>p{
@@ -454,7 +567,7 @@
         font-family: "Nunito Sans";
         font-size: 20px;
         font-style: normal;
-        font-weight: 400;
+        font-weight: 300;
         line-height: normal;
         text-transform: uppercase;
         justify-self: center;
@@ -462,10 +575,34 @@
         grid-area: 1/1/2/2;
     }
 
-    .card-a>img{
+    .card-a>.arr{
         width: 24px;
         height: 16px;
         grid-area: 1/2/2/3;
+        padding-left: 10px;
+        
+    }
+
+    .card-a>.arr2{
+        display: none;
+        width: 24px;
+        height: 16px;
+        grid-area: 1/2/2/3;
+        padding-left: 20px;
+    }
+
+    .card-a:hover>.arr2{
+        display: flex;
+
+    }
+    .card-a:hover>.arr{
+        display: none;
+
+    }
+
+    .card-a:hover>p{
+        font-style: bold;
+        font-weight: 600;
     }
 
     .c1>.card-back {
