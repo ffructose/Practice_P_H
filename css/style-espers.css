@@ -1,0 +1,185 @@
+body {
+    background: #0C0A09;
+
+}
+
+@media (min-width: 320px) and (max-width: 426px) {}
+
+@media (min-width: 426px) and (max-width: 769px) {}
+
+@media (min-width: 769px) {
+    body{
+        background-image: url("../espers/dislyte-bg.jpg") ;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 400px;
+    }
+
+    .espers-header{
+        height: 400px;
+        display: grid;
+        align-items: center;
+    }
+
+    .espers-header>h2{
+        color: #9385FF;
+        font-size: 64px;
+        font-style: normal;
+        font-weight: 500;
+        grid-area: 1/1/2/2;
+        width: 45vw;
+        text-align: end;
+    }
+    .espers-header>p{
+        color: white;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        grid-area: 1/2/2/3;
+        width: 40vw;
+        justify-self: start;
+    }
+
+    .espers-main{
+        margin-top: 28px;
+        background-image: url("../espers/pattern-bg.svg");
+        background-position: top;
+        background-repeat: repeat;
+        background-size: contain;
+        padding-bottom: 60px;
+    }
+
+
+    .search{
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .search-bar {
+        padding: 10px;
+        font-size: 16px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        width: 435px;
+        color: #0C0A09;
+        font-weight: 500;
+        background-image: url("../espers/search-icon.png");
+        background-repeat: no-repeat;
+        background-position: 12px;
+        padding-left: 44px;
+    }
+
+    .search-button {
+        padding: 10px 19px 10px 19px;
+        font-size: 16px;
+        background-color: #A10B24;
+        color: #fff;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        text-transform: uppercase;
+        margin-left: 16px;
+        transition: all 0.3s ease-out;
+    }
+
+    .search-button:hover {
+
+        background-color: #FF102F;
+
+    }
+
+
+    .espers-content{
+        padding-top: 24px;
+        width: 80vw;
+        padding-left: 10vw;
+    }
+
+    .opener{
+        display: grid;
+        width: 154px;
+        align-items: center;
+    }
+    .opener>.badge{
+        grid-area: 1/1/2/2;
+    }
+    .opener>.arrow{
+        grid-area: 1/2/2/3;
+        display: grid;
+        align-items: center;
+        
+    }
+
+    #arrow {
+        transition: transform 0.5s ease-in-out;
+    }
+    
+    .opener>.arrow>.arr{
+        padding: 5px 5px 5px 5px;
+    }
+
+    .rotate {
+        transform: rotate(180deg);
+    }
+
+    .content{
+        display: grid;
+    }
+
+    .c1{ grid-area: 1/1/2/2;}
+    .c2{ grid-area: 1/2/2/3;}
+    .c3{ grid-area: 1/3/2/4;}
+    .c4{ grid-area: 1/4/2/5;}
+    .c5{ grid-area: 1/5/2/6;}
+    .c6{ grid-area: 1/6/2/7;}
+    .c7{ grid-area: 2/1/3/2;}
+    .c8{ grid-area: 2/2/3/3;}
+    .c9{ grid-area: 2/3/3/4;}
+    .c10{ grid-area: 2/4/3/5;}
+    .c11{ grid-area: 2/5/3/6;}
+    .c12{ grid-area: 2/6/3/7;}
+
+    .card{
+        display: grid;
+        justify-content: center;
+        padding-top: 27px;
+    }
+    .card-img{
+        grid-area: 1/1/2/2;
+        filter: drop-shadow(4px 4px 0px #9385FF);
+        
+    }
+    .card-img>img{
+        filter: drop-shadow(2px 2px 0px #000000);
+    }
+
+    .card>h1{
+        grid-area: 2/1/3/2;
+        font-size: 16px;
+        text-align: center;
+        color: white;
+        text-transform: uppercase;
+    }
+
+    .card:hover .card-img{
+        filter: drop-shadow(8px 8px 4px #9385FF);
+        margin-top: -13px;
+    }
+
+    .card:hover .card>h1{
+        font-size: 20px;
+        color: #9385FF;
+    }
+
+
+
+.op2{
+    padding-top: 27px;
+}
+
+.op3{
+    padding-top: 27px;
+}
+}
