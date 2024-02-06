@@ -22,66 +22,61 @@
     }
 
     .dot1 {
-        height: 25vw;
-        width: 25vw;
+        height:  120px;
+        width:  120px;
         background-color: #919CB2;
         opacity: 25%;
         border-radius: 50%;
         display: inline-block;
         z-index: -1;
         position: absolute;
-        top: 15vw;
+        top: 35vw;
         left: -15vw;
-        filter: blur(120px);
+        filter: blur(30px);
     }
 
     .dot2 {
-        height: 25vw;
-        width: 25vw;
+        height:  120px;
+        width:  120px;
         background-color: #919CB2;
         opacity: 25%;
-        border-radius: 50%;
-        display: inline-block;
-        z-index: -1;
-        position: absolute;
-        top: -15vw;
-        left: 28vw;
-        filter: blur(120px);
-    }
-
-    .dot3 {
-        height: 35vw;
-        width: 35vw;
-        background-color: #A10B24;
-        opacity: 50%;
         border-radius: 50%;
         display: inline-block;
         z-index: -1;
         position: absolute;
         top: -10vw;
-        left: 75vw;
-        filter: blur(120px);
-        overflow: hidden;
-        max-height: 100vh;
-        max-width: 100vw;
-        display: none;
+        left: 10vw;
+        filter: blur(40px);
+    }
+
+    .dot3 {
+        height:  120px;
+        width:  90px;
+        background-color: #A10B24;
+        opacity: 25%;
+        border-radius:  15vw 0 0 15vw ;
+        display: inline-block;
+        z-index: -1;
+        position: absolute;
+        top: -3vw;
+        right: 0;
+        filter: blur(30px);
 
     }
 
     .dot4 {
-        height: 25vw;
-        width: 25vw;
+        height:  180px;
+        width:  180px;
         background-color: #A10B24;
         opacity: 25%;
         border-radius: 50%;
         display: inline-block;
         z-index: -1;
         position: absolute;
-        top: -15vw;
-        left: 28vw;
-        filter: blur(120px);
+        top: 100vw;
+        left: 30vw;
+        filter: blur(50px);
     }
-
     .main-1 {
         padding-top: 5px;
         display: grid;
@@ -581,8 +576,8 @@
     }
 
     .dot1 {
-        height: 25vw;
-        width: 25vw;
+        height:  220px;
+        width:  220px;
         background-color: #919CB2;
         opacity: 25%;
         border-radius: 50%;
@@ -591,12 +586,12 @@
         position: absolute;
         top: 15vw;
         left: -15vw;
-        filter: blur(120px);
+        filter: blur(70px);
     }
 
     .dot2 {
-        height: 25vw;
-        width: 25vw;
+        height: 220px;
+        width:  220px;
         background-color: #919CB2;
         opacity: 25%;
         border-radius: 50%;
@@ -605,40 +600,36 @@
         position: absolute;
         top: -15vw;
         left: 28vw;
-        filter: blur(120px);
+        filter: blur(80px);
     }
 
     .dot3 {
-        height: 35vw;
-        width: 35vw;
+        height: 320px;
+        width: 200px;
         background-color: #A10B24;
-        opacity: 50%;
-        border-radius: 50%;
+        opacity: 25%;
+        border-radius:  15vw 0 0 15vw ;
         display: inline-block;
         z-index: -1;
         position: absolute;
-        top: -10vw;
-        left: 75vw;
-        filter: blur(120px);
-        overflow: hidden;
-        max-height: 100vh;
-        max-width: 100vw;
-        display: none;
+        top: -3vw;
+        right: 0;
+        filter: blur(70px);
 
     }
 
     .dot4 {
-        height: 25vw;
-        width: 25vw;
+        height: 320px;
+        width: 320px;
         background-color: #A10B24;
         opacity: 25%;
         border-radius: 50%;
         display: inline-block;
         z-index: -1;
         position: absolute;
-        top: -15vw;
-        left: 28vw;
-        filter: blur(120px);
+        top: 60vw;
+        left: 40vw;
+        filter: blur(80px);
     }
 
     .main-1 {
@@ -1140,8 +1131,8 @@
     }
 
     .dot1 {
-        height: 25vw;
-        width: 25vw;
+        height:  320px;
+        width:  320px;
         background-color: #919CB2;
         opacity: 25%;
         border-radius: 50%;
@@ -1154,8 +1145,8 @@
     }
 
     .dot2 {
-        height: 25vw;
-        width: 25vw;
+        height:  320px;
+        width:  320px;
         background-color: #919CB2;
         opacity: 25%;
         border-radius: 50%;
@@ -1168,36 +1159,32 @@
     }
 
     .dot3 {
-        height: 35vw;
-        width: 35vw;
+        height:  320px;
+        width:  320px;
         background-color: #A10B24;
-        opacity: 50%;
-        border-radius: 50%;
+        opacity: 25%;
+        border-radius:  15vw 0 0 15vw ;
         display: inline-block;
         z-index: -1;
         position: absolute;
-        top: -10vw;
-        left: 75vw;
-        filter: blur(120px);
-        overflow: hidden;
-        max-height: 100vh;
-        max-width: 100vw;
-        display: none;
+        top: -3vw;
+        right: 0;
+        filter: blur(80px);
 
     }
 
     .dot4 {
-        height: 25vw;
-        width: 25vw;
+        height:  320px;
+        width:  320px;
         background-color: #A10B24;
         opacity: 25%;
         border-radius: 50%;
         display: inline-block;
         z-index: -1;
         position: absolute;
-        top: -15vw;
-        left: 28vw;
-        filter: blur(120px);
+        top: 35vw;
+        left: 50vw;
+        filter: blur(80px);
     }
 
     .main-1 {
