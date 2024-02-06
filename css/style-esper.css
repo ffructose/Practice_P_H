@@ -9,75 +9,1349 @@ body {
     background: #0C0A09;
 }
 
-.lines {}
 
-.line {
-    width: 5vw;
-    height: 100%;
-    background-color: #1e19168e;
-    z-index: -1;
-    position: fixed;
+
+
+
+
+
+@media (min-width: 320px) and (max-width: 426px) {
+    .lines {}
+
+    .line {
+        width: 15vw;
+        height: 99%;
+        background-color: #1e19168e;
+        z-index: -1;
+        position: fixed;
+    }
+
+    .rect1 {
+        top: 0;
+        left: 36vw;
+    }
+
+    .rect2 {
+        top: 0;
+        left: 56vw;
+    }
+
+    .rect3 {
+        top: 0;
+        left: 76vw;
+    }
+
+    .rect4,.rect5,.rect6,.rect7,.rect8,.rect9,.rect10 {
+
+        display: none;
+    }
+
+    /* Style the list */
+
+    .bread-block {
+        padding-left: 1vw;
+    }
+
+    ul.breadcrumb {
+        padding: 10px 16px;
+        list-style: none;
+    }
+
+    /* Display list items side by side */
+    ul.breadcrumb li {
+        display: inline;
+        font-size: 18px;
+        color: #E3EDEE;
+        font-family: "Nunito Sans";
+    }
+
+    /* Add a slash symbol (/) before/behind each list item */
+    ul.breadcrumb li+li:before {
+        padding: 8px;
+        content: "/\00a0";
+        color: #E3EDEE;
+        font-family: "Nunito Sans";
+        font-style: normal;
+    }
+
+    /* Add a color to all links inside the list */
+    ul.breadcrumb li a {
+        color: #E3EDEE;
+        font-family: "Nunito Sans";
+        font-style: normal;
+    }
+
+    /* Add a color on mouse-over */
+    ul.breadcrumb li a:hover {
+        color: #9385FF;
+    }
+
+    .current {
+        text-decoration: underline;
+        font-weight: 500;
+        font-style: italic;
+    }
+
+    .first {
+        display: grid;
+        justify-self: start;
+        justify-items: center;
+    }
+
+    .esp-h {
+        width: 48px;
+        height: 20px;
+        transform: skew(-20deg);
+        background: #0C0A09;
+        border-radius: 8px;
+        border: 1px solid #E3EDEE;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .act {
+        background: #A10B24;
+    }
+
+    .txt {
+        color: #E3EDEE;
+        font-size: 12px;
+        text-decoration: none;
+        font-style: normal;
+        font-family: Impact;
+        text-transform: uppercase;
+        transform: skew(20deg);
+        font-weight: 100;
+    }
+
+    .esper-header {
+        display: grid;
+        width: 95vw;
+        justify-content: space-between;
+        align-items: center;
+        align-content: center;
+        justify-self: start;
+        grid-area: 2/1/3/4;
+    }
+
+    .e1 {
+        grid-area: 1/1/2/2;
+    }
+
+    .e2 {
+        grid-area: 1/2/2/3;
+    }
+
+    .e3 {
+        grid-area: 1/3/2/4;
+    }
+
+    .e4 {
+        grid-area: 1/4/2/5;
+    }
+
+    .e5 {
+        grid-area: 1/5/2/6;
+    }
+
+    .e6 {
+        grid-area: 1/6/2/7;
+    }
+
+    .esper-img {
+        grid-area: 1/1/2/2;
+        width: 99vw;
+        height: 200px;
+        overflow: hidden;
+    }
+
+    .esper-img>img {
+        width: 99%;
+        height: auto;
+    }
+
+
+    .esper-main {
+        display: grid;
+        width: 95vw;
+        grid-area: 3/1/4/3;
+        justify-content: start;
+        align-items: start;
+        padding-top: 16px;
+    }
+
+    .title {
+        grid-area: 1/1/2/2;
+        font-family: "Nunito Sans";
+        font-size: 13px;
+        font-style: italic;
+        font-weight: 200;
+        color: white;
+        text-transform: uppercase;
+    }
+
+    .name-block {
+        grid-area: 2/1/3/2;
+        display: grid;
+        padding-top: 5px;
+        align-items: center;
+        justify-content: start;
+    }
+
+    .name {
+        grid-area: 1/1/2/2;
+        font-family: Impact;
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 500;
+        color: white;
+        text-transform: uppercase;
+    }
+
+    .god {
+        grid-area: 1/2/2/3;
+        font-family: Impact;
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 500;
+        color: white;
+        text-transform: uppercase;
+        margin-left: 15px;
+    }
+
+    .role {
+        grid-area: 1/3/2/4;
+        transform: skew(-20deg);
+        background: #9385FF;
+        border-radius: 8px;
+        border: 2px solid #E3EDEE;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        margin-left: 16px;
+    }
+
+    .role>p {
+        font-size: 13px;
+        transform: skew(20deg);
+        font-weight: 400;
+        font-family: Impact;
+        padding: 2px 5px 2px 5px;
+    }
+
+    .power {
+        grid-area: 3/1/4/2;
+        display: grid;
+        justify-content: start;
+        padding-top: 5px;
+        align-items: center;
+    }
+
+    .power>img {
+        grid-area: 1/1/2/2;
+        width: 25px;
+        height: auto;
+    }
+
+    .power>p {
+        grid-area: 1/2/2/3;
+        font-family: "Nunito Sans" t;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        color: white;
+        text-transform: uppercase;
+        padding-left: 5px;
+    }
+
+    .description {
+        grid-area: 4/1/5/2;
+        font-family: "Nunito Sans";
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 300;
+        color: white;
+        padding-top: 10px;
+        letter-spacing: 1.1px;
+        line-height: 21px;
+    }
+
+    .quote {
+        grid-area: 5/1/6/2;
+    }
+
+    .quote>img {
+        z-index: 2;
+        position: absolute;
+        margin-top: 5px;
+        margin-left: 16px;
+        width: 20px;
+        height: auto;
+    }
+
+    .txt-block {
+        margin-top: 15px;
+        width: 95vw;
+        background: #9385FF;
+        height: 50px;
+        border-radius: 5px;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        justify-self: center;
+    }
+
+    .txt-block>p {
+        font-family: "Nunito Sans";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 300;
+        color: white;
+        text-align: center;
+    }
+
+    .esper-info {
+        width: 95vw;
+        height: 395px;
+        background-color: #1e1916;
+        border-radius: 10px;
+        margin-top: 15px;
+        grid-area: 4/1/5/2;
+        display: grid;
+        justify-content: center;
+        justify-items: center;
+    }
+
+    .info-title {
+        margin-top: 16px;
+        font-family: Impact;
+        font-size: 24px;
+        color: #F5F5F5;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    .updown-block {
+        display: grid;
+        justify-items: center;
+    }
+
+    .upper {
+        grid-area: 1/1/2/2;
+        text-decoration: underline;
+        font-size: 16px;
+        font-family: "Nunito Sans";
+        text-transform: uppercase;
+        color: #919CB2;
+
+    }
+
+    .lower {
+        grid-area: 2/1/3/2;
+        color: #919CB2;
+        font-family: Impact;
+        font-size: 20px;
+        font-weight: 500;
+        margin-top: 4px;
+    }
+
+    .age {
+        display: grid;
+    }
+
+    .b1 {
+        grid-area: 1/1/2/2;
+    }
+
+    .b2 {
+        grid-area: 1/2/2/3;
+        margin-left: 35px;
+    }
+
+    .main {
+        display: grid;
+        justify-content: center;
+    }
+
+
+    .advice {
+        display: grid;
+        justify-content: center;
+        justify-self: center;
+        width: 95vw;
+        margin-top: 20px;
+        background-color: #9385ff36;
+        backdrop-filter: blur(5px);
+        border-radius: 30px;
+    }
+
+    .hadvice {
+        margin-top: 15px;
+        font-family: Impact;
+        text-align: center;
+        color: white;
+        font-size: 26px;
+        margin-bottom: 5px;
+    }
+
+    .p1 {
+        font-family: "Nunito Sans";
+        text-align: center;
+        color: white;
+        font-weight: 200;
+        letter-spacing: 1.2px;
+        line-height: 16px;
+        font-size: 14px;
+        margin: 4px 5px 20px 5px;
+    }
+
+    .un {
+        text-decoration: underline;
+        font-family: "Nunito Sans";
+        text-align: center;
+        color: white;
+        font-weight: 200;
+        letter-spacing: 1.2px;
+        line-height: 22px;
+    }
+
+
+
+    .equip {
+        display: grid;
+    }
+
+    .eq1 {
+        font-family: Impact;
+        text-align: center;
+        color: white;
+        font-size: 32px;
+        margin-bottom: 5px;
+    }
+
+    .utility {
+        display: grid;
+        justify-self: center;
+        width: 70vw;
+        justify-content: center;
+    }
+
+    .card-holder {
+        display: grid;
+        width: 90vw;
+        margin-top: 10px;
+        background-color: #9385ff36;
+        backdrop-filter: blur(5px);
+        border-radius: 30px;
+        height: 530px;
+    }
+
+    .card1 {
+        grid-area: 1/1/2/2;
+    }
+
+    .card2 {
+        grid-area: 2/1/3/2;
+    }
+
+    .card3 {
+        grid-area: 3/1/4/2;
+    }
+
+    .ab-name {
+        margin-top: 10px;
+        height: 25px;
+        grid-area: 1/1/2/3;
+        font-family: Impact;
+        font-weight: 100;
+        text-transform: uppercase;
+        font-size: 20px;
+        color: #E3EDEE;
+        justify-self: center;
+        align-self: start;
+    }
+
+    .abilities-block {
+        display: grid;
+        align-self: start;
+        position: absolute;
+        margin-top: 45px;
+        width: 45vw;
+    }
+
+    .ability {
+        display: grid;
+        justify-items: center;
+    }
+
+    .ability>.uti-logo {
+        width: 60px;
+        height: auto;
+        grid-area: 1/1/2/2;
+    }
+
+    .ability>.uti-circles {
+        margin-top: 10px;
+        width: auto;
+        height: 10px;
+        grid-area: 2/1/3/2;
+    }
+
+    .ability>h1 {
+        margin-top: 10px;
+        font-family: "Nunito Sans";
+        text-align: center;
+        font-weight: 300;
+        text-transform: none;
+        font-size: 16px;
+        color: #E3EDEE;
+        grid-area: 3/1/4/2;
+    }
+
+    .ability>p {
+        font-family: "Nunito Sans";
+        text-align: center;
+        font-weight: 100;
+        text-transform: none;
+        font-size: 14px;
+        color: #E3EDEE;
+        grid-area: 4/1/5/2;
+        margin: 10px 5px 0px 5px;
+    }
+
+    .first-ab {
+        grid-area: 1/1/2/2;
+        width: 45vw;
+        align-self: start;
+    }
+
+    .sec-ab {
+        grid-area: 1/2/2/3;
+        width: 45vw;
+        align-self: start;
+    }
+
+    .ab-desc {
+        grid-area: 3/1/4/3;
+        margin-top: 300px;
+        font-family: "Nunito Sans";
+        text-align: center;
+        font-weight: 100;
+        text-transform: none;
+        letter-spacing: 1.5px;
+        line-height: 20px;
+        font-size: 14px;
+        color: #E3EDEE;
+        justify-self: center;
+        align-self: end;
+        height: 90px;
+    }
+
+    .icons {
+        grid-area: 4/1/5/3;
+        display: grid;
+        align-content: center;
+        align-self: end;
+        margin-bottom: 25px;
+    }
+
+    .ic1 {
+        grid-area: 1/1/2/2;
+    }
+
+    .ic2 {
+        grid-area: 1/2/2/3;
+    }
+
+    .ic3 {
+        grid-area: 1/3/2/4;
+    }
+
+    .icon-block {
+        display: grid;
+        justify-items: center;
+    }
+
+    .icon-block>img {
+        width: 40px;
+        height: 40px;
+        margin-bottom: 10px;
+    }
+
+    .icon-block>p {
+        display: grid;
+        margin-top: 1px;
+        font-family: "Nunito Sans";
+        text-align: center;
+        font-weight: 100;
+        text-transform: none;
+        font-size: 16px;
+        color: #E3EDEE;
+    }
+
+
+
+    .substat {
+        margin-top: 20px;
+        display: grid;
+        justify-self: center;
+        justify-items: center;
+        width: 95vw;
+        margin-bottom: 60px;
+    }
+
+    .substat>h1 {
+        font-family: Impact;
+        text-align: center;
+        font-weight: 300;
+        text-transform: none;
+        font-size: 32px;
+        color: #E3EDEE;
+    }
+
+    .priority {
+        display: flex;
+        margin-top: 20px;
+    }
+
+    ul.pri-list {
+        padding: 5px 8px;
+        list-style: none;
+        margin-left: 5px;
+
+    }
+
+    /* Display list items side by side */
+    ul.pri-list li {
+        display: inline;
+
+    }
+
+    /* Add a slash symbol (/) before/behind each list item */
+    ul.pri-list li+li:before {
+        padding: 1px;
+        content: url("../about-esper/tri-mini.svg");
+
+    }
+
+    .block {
+        background-color: #A10B24;
+        border-radius: 8px;
+        padding: 4px 5px 4px 5px;
+        font-size: 12px;
+        color: #E3EDEE;
+        font-family: Impact;
+        text-align: center;
+    }
+
+    .small-block {
+        padding-top: 6px;
+    }
+
 }
 
-.rect1 {
-    top: 0;
-    left: 26vw;
+@media (min-width: 426px) and (max-width: 769px) {
+    .lines {}
+
+    .line {
+        width: 8vw;
+        height: 99%;
+        background-color: #1e19168e;
+        z-index: -1;
+        position: fixed;
+    }
+
+    .rect1 {
+        top: 0;
+        left: 26vw;
+    }
+
+    .rect2 {
+        top: 0;
+        left: 38vw;
+    }
+
+    .rect3 {
+        top: 0;
+        left: 50vw;
+    }
+
+    .rect4 {
+        top: 0;
+        left: 62vw;
+    }
+
+    .rect5 {
+        top: 0;
+        left: 74vw;
+    }
+
+    .rect6 {
+        top: 0;
+        left: 86vw;
+    }
+
+    .rect7,.rect8,.rect9,.rect10 {
+
+        display: none;
+    }
+
+    /* Style the list */
+
+    .bread-block {
+        padding-left: 50px;
+    }
+
+    ul.breadcrumb {
+        padding: 10px 16px;
+        list-style: none;
+    }
+
+    /* Display list items side by side */
+    ul.breadcrumb li {
+        display: inline;
+        font-size: 18px;
+        color: #E3EDEE;
+        font-family: "Nunito Sans";
+    }
+
+    /* Add a slash symbol (/) before/behind each list item */
+    ul.breadcrumb li+li:before {
+        padding: 8px;
+        content: "/\00a0";
+        color: #E3EDEE;
+        font-family: "Nunito Sans";
+        font-style: normal;
+    }
+
+    /* Add a color to all links inside the list */
+    ul.breadcrumb li a {
+        color: #E3EDEE;
+        font-family: "Nunito Sans";
+        font-style: normal;
+    }
+
+    /* Add a color on mouse-over */
+    ul.breadcrumb li a:hover {
+        color: #9385FF;
+    }
+
+    .current {
+        text-decoration: underline;
+        font-weight: 500;
+        font-style: italic;
+    }
+
+    .first {
+        display: grid;
+        
+    }
+
+    .esp-h {
+        width: 100px;
+        height: 28px;
+        transform: skew(-20deg);
+        background: #0C0A09;
+        border-radius: 8px;
+        border: 2px solid #E3EDEE;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .act {
+        background: #A10B24;
+    }
+
+    .txt {
+        color: #E3EDEE;
+        font-size: 20px;
+        text-decoration: none;
+        font-style: normal;
+        font-family: Impact;
+        text-transform: uppercase;
+        transform: skew(20deg);
+    }
+
+    .esper-header {
+        display: grid;
+        width: 90vw;
+        justify-content: space-around;
+        align-items: center;
+        grid-area: 1/1/2/3;
+    }
+
+    .e1 {
+        grid-area: 1/1/2/2;
+    }
+
+    .e2 {
+        grid-area: 1/2/2/3;
+    }
+
+    .e3 {
+        grid-area: 1/3/2/4;
+    }
+
+    .e4 {
+        grid-area: 1/4/2/5;
+    }
+
+    .e5 {
+        grid-area: 1/5/2/6;
+    }
+
+    .e6 {
+        grid-area: 1/6/2/7;
+    }
+
+    .esper-img {
+        grid-area: 3/1/4/3;
+        height: 50vh;
+        overflow: hidden;
+    }
+
+    .esper-img>img {
+        width: 95vw;
+        height: auto;
+    }
+
+
+    .esper-main {
+        display: grid;
+        width: 435px;
+        grid-area: 2/1/3/2;
+        justify-content: start;
+        align-items: start;
+        padding-top: 26px;
+    }
+
+    .title {
+        grid-area: 1/1/2/2;
+        font-family: "Nunito Sans";
+        font-size: 16px;
+        font-style: italic;
+        font-weight: 200;
+        color: white;
+        text-transform: uppercase;
+    }
+
+    .name-block {
+        grid-area: 2/1/3/2;
+        display: grid;
+        padding-top: 20px;
+        align-items: center;
+    }
+
+    .name {
+        grid-area: 1/1/2/2;
+        font-family: Impact;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 500;
+        color: white;
+        text-transform: uppercase;
+    }
+
+    .god {
+        grid-area: 1/2/2/3;
+        font-family: Impact;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 500;
+        color: white;
+        text-transform: uppercase;
+    }
+
+    .role {
+        grid-area: 1/3/2/4;
+        width: 90px;
+        height: 23px;
+        transform: skew(-20deg);
+        background: #9385FF;
+        border-radius: 8px;
+        border: 4px solid #E3EDEE;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        margin-left: 16px;
+    }
+
+    .role>p {
+        font-size: 16px;
+        transform: skew(20deg);
+        font-weight: 400;
+        font-family: Impact;
+    }
+
+    .power {
+        grid-area: 3/1/4/2;
+        display: grid;
+        justify-content: start;
+        padding-top: 14px;
+    }
+
+    .power>img {
+        grid-area: 1/1/2/2;
+    }
+
+    .power>p {
+        grid-area: 1/2/2/3;
+        font-family: "Nunito Sans" t;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        color: white;
+        text-transform: uppercase;
+        padding-left: 8px;
+    }
+
+    .description {
+        grid-area: 4/1/5/2;
+        font-family: "Nunito Sans";
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 300;
+        color: white;
+        padding-top: 31px;
+        letter-spacing: 1.1px;
+        line-height: 31px;
+    }
+
+    .quote {
+        grid-area: 5/1/6/2;
+    }
+
+    .quote>img {
+        z-index: 2;
+        position: absolute;
+        margin-top: 20px;
+        margin-left: 16px;
+    }
+
+    .txt-block {
+        margin-top: 44px;
+        width: 99%;
+        background: #9385FF;
+        height: 67px;
+        border-radius: 5px;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .txt-block>p {
+        font-family: "Nunito Sans";
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 300;
+        color: white;
+        text-align: center;
+    }
+
+    .esper-info {
+        width: 255px;
+        height: 395px;
+        background-color: #1e1916;
+        border-radius: 10px;
+        margin-top: 15px;
+        grid-area: 2/2/4/3;
+        display: grid;
+        justify-content: center;
+        justify-items: center;
+    }
+
+    .info-title {
+        margin-top: 16px;
+        font-family: Impact;
+        font-size: 24px;
+        color: #F5F5F5;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    .updown-block {
+        display: grid;
+        justify-items: center;
+    }
+
+    .upper {
+        grid-area: 1/1/2/2;
+        text-decoration: underline;
+        font-size: 16px;
+        font-family: "Nunito Sans";
+        text-transform: uppercase;
+        color: #919CB2;
+
+    }
+
+    .lower {
+        grid-area: 2/1/3/2;
+        color: #919CB2;
+        font-family: Impact;
+        font-size: 20px;
+        font-weight: 500;
+        margin-top: 4px;
+    }
+
+    .age {
+        display: grid;
+    }
+
+    .b1 {
+        grid-area: 1/1/2/2;
+    }
+
+    .b2 {
+        grid-area: 1/2/2/3;
+        margin-left: 35px;
+    }
+
+    .main {
+        display: grid;
+    }
+
+
+    .advice {
+        display: grid;
+        justify-content: center;
+        width: 85vw;
+        justify-self: center;
+        background-color: #9385ff36;
+        backdrop-filter: blur(5px);
+        border-radius: 30px;
+    }
+
+    .hadvice {
+        margin-top: 25px;
+        font-family: Impact;
+        text-align: center;
+        color: white;
+        font-size: 32px;
+        margin-bottom: 20px;
+    }
+
+    .p1 {
+        font-family: "Nunito Sans";
+        text-align: center;
+        color: white;
+        font-weight: 200;
+        letter-spacing: 1.2px;
+        line-height: 22px;
+        font-size: 20px;
+        margin: 4px 15px 20px 15px;
+    }
+
+    .un {
+        text-decoration: underline;
+        font-family: "Nunito Sans";
+        text-align: center;
+        color: white;
+        font-weight: 200;
+        letter-spacing: 1.2px;
+        line-height: 22px;
+    }
+
+
+
+    .equip {
+        display: grid;
+        padding-top: 20px;
+    }
+
+    .eq1 {
+        font-family: Impact;
+        text-align: center;
+        color: white;
+        font-size: 32px;
+        margin-bottom: 5px;
+    }
+
+    .utility {
+        display: grid;
+        justify-self: center;
+        width: 70vw;
+        justify-content: center;
+    }
+
+    .card-holder {
+        display: grid;
+        width: 346px;
+        margin-top: 10px;
+        background-color: #9385ff36;
+        backdrop-filter: blur(5px);
+        border-radius: 30px;
+        height: 651px;
+    }
+
+    .card1 {
+        grid-area: 1/1/2/2;
+        justify-self: center;
+    }
+
+    .card2 {
+        grid-area: 1/2/2/3;
+        margin-left: 20px;
+    }
+
+    .card3 {
+        grid-area: 2/1/3/3;
+        justify-self: center;
+    }
+
+    .ab-name {
+        margin-top: 20px;
+        height: 50px;
+        grid-area: 1/1/2/3;
+        font-family: Impact;
+        font-weight: 100;
+        text-transform: uppercase;
+        font-size: 24px;
+        color: #E3EDEE;
+        justify-self: center;
+        align-self: start;
+    }
+
+    .abilities-block {
+        display: grid;
+        align-self: start;
+        position: absolute;
+        margin-top: 70px;
+    }
+
+    .ability {
+        display: grid;
+        justify-items: center;
+    }
+
+    .ability>.uti-logo {
+        width: 80px;
+        height: 80px;
+        grid-area: 1/1/2/2;
+    }
+
+    .ability>.uti-circles {
+        margin-top: 10px;
+        width: 72px;
+        height: 12px;
+        grid-area: 2/1/3/2;
+    }
+
+    .ability>h1 {
+        margin-top: 10px;
+        font-family: "Nunito Sans";
+        text-align: center;
+        font-weight: 300;
+        text-transform: none;
+        font-size: 20px;
+        color: #E3EDEE;
+        grid-area: 3/1/4/2;
+    }
+
+    .ability>p {
+        font-family: "Nunito Sans";
+        text-align: center;
+        font-weight: 100;
+        text-transform: none;
+        font-size: 16px;
+        color: #E3EDEE;
+        grid-area: 4/1/5/2;
+        margin: 10px 5px 0px 5px;
+    }
+
+    .first-ab {
+        grid-area: 1/1/2/2;
+        width: 173px;
+        align-self: start;
+    }
+
+    .sec-ab {
+        grid-area: 1/2/2/3;
+        width: 173px;
+        align-self: start;
+    }
+
+    .ab-desc {
+        grid-area: 3/1/4/3;
+        margin-top: 350px;
+        font-family: "Nunito Sans";
+        text-align: center;
+        font-weight: 100;
+        text-transform: none;
+        letter-spacing: 1.5px;
+        line-height: 20px;
+        font-size: 16px;
+        color: #E3EDEE;
+        justify-self: center;
+        align-self: end;
+        height: 128px;
+    }
+
+    .icons {
+        grid-area: 4/1/5/3;
+        display: grid;
+        align-content: center;
+        align-self: end;
+        margin-bottom: 25px;
+    }
+
+    .ic1 {
+        grid-area: 1/1/2/2;
+    }
+
+    .ic2 {
+        grid-area: 1/2/2/3;
+    }
+
+    .ic3 {
+        grid-area: 1/3/2/4;
+    }
+
+    .icon-block {
+        display: grid;
+        justify-items: center;
+    }
+
+    .icon-block>img {
+        width: 40px;
+        height: 40px;
+        margin-bottom: 10px;
+    }
+
+    .icon-block>p {
+        display: grid;
+        margin-top: 3px;
+        font-family: "Nunito Sans";
+        text-align: center;
+        font-weight: 100;
+        text-transform: none;
+        font-size: 16px;
+        color: #E3EDEE;
+    }
+
+
+
+    .substat {
+        margin-top: 40px;
+        display: grid;
+        justify-self: center;
+        justify-items: center;
+        width: 85vw;
+        margin-bottom: 60px;
+    }
+
+    .substat>h1 {
+        font-family: Impact;
+        text-align: center;
+        font-weight: 300;
+        text-transform: none;
+        font-size: 32px;
+        color: #E3EDEE;
+    }
+
+    .priority {
+        display: flex;
+        margin-top: 20px;
+    }
+
+    ul.pri-list {
+        padding: 10px 16px;
+        list-style: none;
+        margin-left: 20px;
+
+    }
+
+    /* Display list items side by side */
+    ul.pri-list li {
+        display: inline;
+
+    }
+
+    /* Add a slash symbol (/) before/behind each list item */
+    ul.pri-list li+li:before {
+        padding: 8px;
+        content: url("../about-esper/tri.png");
+    }
+
+    .block {
+        background-color: #A10B24;
+        border-radius: 12px;
+        padding: 8px 13px 8px 13px;
+        font-size: 20px;
+        color: #E3EDEE;
+        font-family: Impact;
+        text-align: center;
+    }
+
+
+
+
 }
-
-.rect2 {
-    top: 0;
-    left: 32vw;
-}
-
-.rect3 {
-    top: 0;
-    left: 38vw;
-}
-
-.rect4 {
-    top: 0;
-    left: 44vw;
-}
-
-.rect5 {
-    top: 0;
-    left: 50vw;
-}
-
-.rect6 {
-    top: 0;
-    left: 56vw;
-}
-
-.rect7 {
-    top: 0;
-    left: 62vw;
-}
-
-.rect8 {
-    top: 0;
-    left: 68vw;
-}
-
-.rect9 {
-    top: 0;
-    left: 74vw;
-}
-
-.rect10 {
-    top: 0;
-    left: 80vw;
-}
-
-
-
-
-
-@media (min-width: 320px) and (max-width: 426px) {}
-
-@media (min-width: 426px) and (max-width: 769px) {}
 
 @media (min-width: 769px) {
+    .lines {}
+
+    .line {
+        width: 5vw;
+        height: 99%;
+        background-color: #1e19168e;
+        z-index: -1;
+        position: fixed;
+    }
+
+    .rect1 {
+        top: 0;
+        left: 26vw;
+    }
+
+    .rect2 {
+        top: 0;
+        left: 32vw;
+    }
+
+    .rect3 {
+        top: 0;
+        left: 38vw;
+    }
+
+    .rect4 {
+        top: 0;
+        left: 44vw;
+    }
+
+    .rect5 {
+        top: 0;
+        left: 50vw;
+    }
+
+    .rect6 {
+        top: 0;
+        left: 56vw;
+    }
+
+    .rect7 {
+        top: 0;
+        left: 62vw;
+    }
+
+    .rect8 {
+        top: 0;
+        left: 68vw;
+    }
+
+    .rect9 {
+        top: 0;
+        left: 74vw;
+    }
+
+    .rect10 {
+        top: 0;
+        left: 80vw;
+    }
+
     /* Style the list */
 
     .bread-block {
@@ -238,8 +1512,18 @@ body {
         text-transform: uppercase;
     }
 
-    .role {
+    .god {
         grid-area: 1/2/2/3;
+        font-family: Impact;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 500;
+        color: white;
+        text-transform: uppercase;
+    }
+
+    .role {
+        grid-area: 1/3/2/4;
         width: 90px;
         height: 23px;
         transform: skew(-20deg);
@@ -306,7 +1590,7 @@ body {
 
     .txt-block {
         margin-top: 44px;
-        width: 100%;
+        width: 99%;
         background: #9385FF;
         height: 67px;
         border-radius: 5px;
@@ -382,7 +1666,7 @@ body {
         margin-left: 35px;
     }
 
-    .main{
+    .main {
         display: grid;
     }
 
@@ -418,7 +1702,7 @@ body {
         margin: 4px 94px 20px 94px;
     }
 
-    .un{
+    .un {
         text-decoration: underline;
         font-family: "Nunito Sans";
         text-align: center;
@@ -430,18 +1714,27 @@ body {
 
 
 
-    .equip{
+    .equip {
         display: grid;
     }
 
-    .utility{
+    .eq1 {
+        margin-top: 15px;
+        font-family: Impact;
+        text-align: center;
+        color: white;
+        font-size: 32px;
+        margin-bottom: 5px;
+    }
+
+    .utility {
         display: grid;
         justify-self: center;
         width: 70vw;
         justify-content: center;
     }
 
-    .card-holder{
+    .card-holder {
         display: grid;
         width: 346px;
         margin-top: 70px;
@@ -451,19 +1744,21 @@ body {
         height: 651px;
     }
 
-    .card1{
+    .card1 {
         grid-area: 1/1/2/2;
     }
-    .card2{
+
+    .card2 {
         grid-area: 1/2/2/3;
         margin-left: 20px;
         margin-right: 20px;
     }
-    .card3{
+
+    .card3 {
         grid-area: 1/3/2/4;
     }
 
-    .ab-name{
+    .ab-name {
         margin-top: 20px;
         height: 50px;
         grid-area: 1/1/2/3;
@@ -476,28 +1771,32 @@ body {
         align-self: start;
     }
 
-    .abilities-block{
+    .abilities-block {
         display: grid;
         align-self: start;
         position: absolute;
         margin-top: 70px;
     }
-    .ability{
+
+    .ability {
         display: grid;
         justify-items: center;
     }
-    .ability>.uti-logo{
+
+    .ability>.uti-logo {
         width: 80px;
         height: 80px;
         grid-area: 1/1/2/2;
     }
-    .ability>.uti-circles{
+
+    .ability>.uti-circles {
         margin-top: 10px;
         width: 72px;
         height: 12px;
         grid-area: 2/1/3/2;
     }
-    .ability>h1{
+
+    .ability>h1 {
         margin-top: 10px;
         font-family: "Nunito Sans";
         text-align: center;
@@ -508,7 +1807,7 @@ body {
         grid-area: 3/1/4/2;
     }
 
-    .ability>p{
+    .ability>p {
         font-family: "Nunito Sans";
         text-align: center;
         font-weight: 100;
@@ -519,18 +1818,19 @@ body {
         margin: 10px 5px 0px 5px;
     }
 
-    .first-ab{
+    .first-ab {
         grid-area: 1/1/2/2;
         width: 173px;
         align-self: start;
     }
-    .sec-ab{
+
+    .sec-ab {
         grid-area: 1/2/2/3;
         width: 173px;
         align-self: start;
     }
 
-    .ab-desc{
+    .ab-desc {
         grid-area: 3/1/4/3;
         margin-top: 350px;
         font-family: "Nunito Sans";
@@ -546,7 +1846,7 @@ body {
         height: 128px;
     }
 
-    .icons{
+    .icons {
         grid-area: 4/1/5/3;
         display: grid;
         align-content: center;
@@ -554,26 +1854,30 @@ body {
         margin-bottom: 25px;
     }
 
-    .ic1{
+    .ic1 {
         grid-area: 1/1/2/2;
     }
-    .ic2{
+
+    .ic2 {
         grid-area: 1/2/2/3;
     }
-    .ic3{
+
+    .ic3 {
         grid-area: 1/3/2/4;
     }
 
-    .icon-block{
+    .icon-block {
         display: grid;
         justify-items: center;
     }
-    .icon-block>img{
+
+    .icon-block>img {
         width: 40px;
         height: 40px;
         margin-bottom: 10px;
     }
-    .icon-block>p{
+
+    .icon-block>p {
         display: grid;
         margin-top: 3px;
         font-family: "Nunito Sans";
@@ -586,7 +1890,7 @@ body {
 
 
 
-    .substat{
+    .substat {
         margin-top: 40px;
         display: grid;
         justify-self: center;
@@ -595,7 +1899,7 @@ body {
         margin-bottom: 60px;
     }
 
-    .substat>h1{
+    .substat>h1 {
         font-family: Impact;
         text-align: center;
         font-weight: 300;
@@ -603,7 +1907,7 @@ body {
         font-size: 32px;
         color: #E3EDEE;
     }
-    
+
     .priority {
         display: flex;
         margin-top: 20px;
@@ -628,7 +1932,7 @@ body {
         content: url("../about-esper/tri.png");
     }
 
-    .block{
+    .block {
         background-color: #A10B24;
         border-radius: 12px;
         padding: 8px 13px 8px 13px;
