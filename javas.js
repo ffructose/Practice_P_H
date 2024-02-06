@@ -42,3 +42,4 @@ function toggleContent3() {
     // Додаємо або видаляємо клас для анімації повороту
     arrow.classList.toggle('rotate');
 }
+
