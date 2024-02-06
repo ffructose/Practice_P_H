@@ -3,6 +3,10 @@
     src: url(../font/Nunito_Sans/NunitoSans-VariableFont_YTLC\,opsz\,wdth\,wght.ttf);
 }
 
+body{
+    margin: 0px;
+}
+
 
 /* ---------------ТЕЛЕФОН--------------- */
 @media (min-width: 320px) and (max-width: 426px) {
@@ -13,8 +17,19 @@
         width: 100%;
         padding-bottom: 34px;
         padding-top: 24px;
-
+        overflow: hidden;
+        bottom: 0;
     }
+
+    .footer-color{
+        background-color: #0C0A09;
+        position: absolute;
+        z-index: -1;
+        height: 205px;
+        width: 99vw;
+    }
+
+
 
     hr {
         border-style: solid;
@@ -151,8 +166,16 @@
         display: grid;
         align-items: center;
         width: 100%;
-        padding-bottom: 34px;
-        padding-top: 24px;
+        overflow: hidden;
+        bottom: 0;
+    }
+
+    .footer-color{
+        background-color: #0C0A09;
+        position: absolute;
+        z-index: -1;
+        height: 190px;
+        width: 99vw;
     }
 
     hr {
@@ -292,6 +315,15 @@
         padding-bottom: 34px;
         padding-top: 24px;
         bottom: 0;
+        overflow: hidden;
+    }
+
+    .footer-color{
+        background-color: #0C0A09;
+        position: absolute;
+        z-index: -1;
+        height: 185px;
+        width: 99vw;
     }
 
     hr {
