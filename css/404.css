@@ -1,0 +1,10 @@
+body {
+    background: #0C0A09;
+}
+
+
+@media (min-width: 320px) and (max-width: 426px) {}
+
+@media (min-width: 426px) and (max-width: 769px) {}
+
+@media (min-width: 769px) {}
