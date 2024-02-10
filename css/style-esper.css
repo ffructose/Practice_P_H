@@ -428,7 +428,8 @@ body {
         text-align: center;
         color: white;
         font-size: 32px;
-        margin-bottom: 5px;
+        margin-bottom: -5px;
+        margin-top: 25px;
     }
 
     .utility {
@@ -1067,7 +1068,8 @@ body {
         text-align: center;
         color: white;
         font-size: 32px;
-        margin-bottom: 5px;
+        margin-bottom: -5px;
+        margin-top: 25px;
     }
 
     .utility {
@@ -1719,12 +1721,12 @@ body {
     }
 
     .eq1 {
-        margin-top: 15px;
+        margin-top: 55px;
         font-family: Impact;
         text-align: center;
         color: white;
         font-size: 32px;
-        margin-bottom: 5px;
+        margin-bottom: -25px;
     }
 
     .utility {
